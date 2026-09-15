@@ -1,0 +1,1473 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+
+    font-family: "Poppins", sans-serif;
+
+    background: #faf7f2;
+
+    color: #272329;
+
+    overflow-x: hidden;
+
+}
+
+
+/* =====================================================
+                        NAV
+===================================================== */
+
+nav {
+
+    position: fixed;
+
+    top: 0;
+
+    width: 100%;
+
+    height: 75px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 0 7%;
+
+    background: rgba(250,247,242,0.88);
+
+    backdrop-filter: blur(15px);
+
+    z-index: 100;
+
+}
+
+
+.logo {
+
+    font-family: "DM Serif Display", serif;
+
+    font-size: 24px;
+
+}
+
+
+.logo span {
+
+    color: #b77c91;
+
+}
+
+
+.nav-links {
+
+    display: flex;
+
+    gap: 30px;
+
+}
+
+
+.nav-links a {
+
+    text-decoration: none;
+
+    color: #272329;
+
+    font-size: 12px;
+
+    transition: 0.3s;
+
+}
+
+
+.nav-links a:hover {
+
+    color: #b77c91;
+
+}
+
+
+/* =====================================================
+                        HERO
+===================================================== */
+
+.hero {
+
+    min-height: 100vh;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    align-items: center;
+
+    gap: 70px;
+
+    padding: 130px 9% 80px;
+
+}
+
+
+.hero-text {
+
+    animation: fadeUp 1s ease;
+
+}
+
+
+.tiny {
+
+    text-transform: uppercase;
+
+    letter-spacing: 3px;
+
+    font-size: 9px;
+
+    color: #a07c89;
+
+    margin-bottom: 20px;
+
+}
+
+
+.hero h1 {
+
+    font-family: "DM Serif Display", serif;
+
+    font-size: clamp(80px, 11vw, 160px);
+
+    line-height: 0.75;
+
+    letter-spacing: -4px;
+
+}
+
+
+.hero h1 span {
+
+    color: #b77c91;
+
+    font-style: italic;
+
+}
+
+
+.hero-description {
+
+    max-width: 450px;
+
+    margin: 40px 0 20px;
+
+    color: #71676d;
+
+    line-height: 1.8;
+
+    font-size: 14px;
+
+}
+
+
+.meaning {
+
+    color: #a07c89;
+
+    font-size: 11px;
+
+    line-height: 1.8;
+
+    margin-bottom: 30px;
+
+}
+
+
+.meaning strong {
+
+    color: #272329;
+
+}
+
+
+.main-button {
+
+    display: inline-block;
+
+    padding: 15px 25px;
+
+    background: #272329;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 100px;
+
+    font-size: 12px;
+
+    transition: 0.3s;
+
+}
+
+
+.main-button:hover {
+
+    transform: translateY(-4px);
+
+}
+
+
+/* =====================================================
+                    HERO PHOTO
+===================================================== */
+
+.hero-photo {
+
+    position: relative;
+
+}
+
+
+.hero-photo img {
+
+    width: 100%;
+
+    height: 620px;
+
+    object-fit: cover;
+
+    border-radius: 250px 250px 20px 20px;
+
+    box-shadow: 20px 30px 70px rgba(60,40,50,0.15);
+
+}
+
+
+.photo-note {
+
+    position: absolute;
+
+    left: -30px;
+
+    bottom: 25px;
+
+    background: white;
+
+    padding: 18px 25px;
+
+    box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+
+    transform: rotate(-3deg);
+
+}
+
+
+.photo-note strong {
+
+    display: block;
+
+    font-family: "DM Serif Display", serif;
+
+    font-size: 21px;
+
+}
+
+
+.photo-note small {
+
+    color: #9b858e;
+
+    font-size: 10px;
+
+}
+
+
+/* =====================================================
+                    INTRO
+===================================================== */
+
+.intro-section {
+
+    text-align: center;
+
+    padding: 130px 20px;
+
+    background: #f0e5e8;
+
+}
+
+
+.intro-section h2 {
+
+    font-family: "DM Serif Display", serif;
+
+    font-size: clamp(55px, 8vw, 100px);
+
+    line-height: 0.9;
+
+}
+
+
+.intro-section h2 span {
+
+    color: #b77c91;
+
+    font-style: italic;
+
+}
+
+
+.intro-section > p:not(.tiny) {
+
+    max-width: 600px;
+
+    margin: 35px auto;
+
+    color: #756b70;
+
+    line-height: 1.8;
+
+}
+
+
+.tiny-divider {
+
+    color: #b77c91;
+
+    margin-top: 40px;
+
+}
+
+
+/* =====================================================
+                    GENERAL SECTIONS
+===================================================== */
+
+.section {
+
+    padding: 130px 9%;
+
+}
+
+
+.section-heading {
+
+    margin-bottom: 70px;
+
+}
+
+
+.section-heading h2 {
+
+    font-family: "DM Serif Display", serif;
+
+    font-size: clamp(60px, 8vw, 105px);
+
+    line-height: 0.85;
+
+}
+
+
+.section-heading h2 span {
+
+    color: #b77c91;
+
+    font-style: italic;
+
+}
+
+
+.center {
+
+    text-align: center;
+
+}
+
+
+/* =====================================================
+                    PEOPLE
+===================================================== */
+
+.people-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 35px;
+
+}
+
+
+.person-card {
+
+    min-height: 390px;
+
+    display: grid;
+
+    grid-template-columns: 45% 55%;
+
+    background: white;
+
+    overflow: hidden;
+
+    box-shadow: 0 15px 50px rgba(60,40,50,0.08);
+
+    transition: 0.4s;
+
+}
+
+
+.person-card:hover {
+
+    transform: translateY(-10px) rotate(-1deg);
+
+}
+
+
+.person-photo {
+
+    overflow: hidden;
+
+}
+
+
+.person-photo img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: 0.5s;
+
+}
+
+
+.person-card:hover img {
+
+    transform: scale(1.07);
+
+}
+
+
+.person-info {
+
+    padding: 40px 30px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+}
+
+
+.nickname {
+
+    font-size: 8px;
+
+    letter-spacing: 2px;
+
+    color: #a27b88;
+
+    margin-bottom: 15px;
+
+}
+
+
+.person-info h3 {
+
+    font-family: "DM Serif Display", serif;
+
+    font-size: 42px;
+
+    line-height: 0.95;
+
+    margin-bottom: 20px;
+
+}
+
+
+.person-info > p:not(.nickname) {
+
+    font-size: 11px;
+
+    line-height: 1.7;
+
+    color: #756b70;
+
+}
+
+
+.love-line {
+
+    margin-bottom: 15px;
+
+    color: #9c6579;
+
+    font-size: 12px;
+
+    font-weight: 500;
+
+}
+
+
+.pink-text {
+
+    color: #ff69b4 !important;
+
+}
+
+
+.person-info button {
+
+    border: none;
+
+    background: none;
+
+    text-align: left;
+
+    margin-top: 25px;
+
+    font-family: inherit;
+
+    font-size: 11px;
+
+    color: #9b6478;
+
+    cursor: pointer;
+
+}
+
+
+/* =====================================================
+                    QUOTE
+===================================================== */
+
+.quote-section {
+
+    min-height: 65vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 100px 15%;
+
+    background: #272329;
+
+    color: white;
+
+}
+
+
+.quote {
+
+    max-width: 900px;
+
+    text-align: center;
+
+}
+
+
+.quote > span {
+
+    font-family: "DM Serif Display", serif;
+
+    font-size: 100px;
+
+    color: #c38b9d;
+
+}
+
+
+.quote h2 {
+
+    font-family: "DM Serif Display", serif;
+
+    font-size: clamp(40px, 6vw, 75px);
+
+    line-height: 1.1;
+
+}
+
+
+.quote p {
+
+    margin-top: 30px;
+
+    color: #bdaeb5;
+
+}
+
+
+/* =====================================================
+                    MEMORIES
+===================================================== */
+
+.memory-grid {
+
+    display: grid;
+
+    grid-template-columns: 1.3fr 1fr 1fr;
+
+    gap: 25px;
+
+}
+
+
+.memory {
+
+    background: white;
+
+    box-shadow: 0 15px 40px rgba(0,0,0,0.07);
+
+    transition: 0.3s;
+
+}
+
+
+.memory:hover {
+
+    transform: translateY(-7px);
+
+}
+
+
+.memory img {
+
+    width: 100%;
+
+    height: 280px;
+
+    object-fit: cover;
+
+}
+
+
+.memory-large img {
+
+    height: 420px;
+
+}
+
+
+.memory div {
+
+    padding: 22px;
+
+}
+
+
+.memory span {
+
+    font-size: 9px;
+
+    color: #ae7b8d;
+
+}
+
+
+.memory h3 {
+
+    font-family: "DM Serif Display", serif;
+
+    font-size: 27px;
+
+    margin: 5px 0;
+
+}
+
+
+.memory p {
+
+    font-size: 10px;
+
+    color: #7d7278;
+
+}
+
+
+/* =====================================================
+                RANDOM MEMORY MACHINE
+===================================================== */
+
+.random-box {
+
+    max-width: 650px;
+
+    margin: 90px auto 0;
+
+    text-align: center;
+
+    padding: 55px;
+
+    border: 1px dashed #c9aab5;
+
+    border-radius: 20px;
+
+}
+
+
+.random-box h3 {
+
+    font-family: "DM Serif Display", serif;
+
+    font-size: 32px;
+
+    margin-bottom: 25px;
+
+    transition: 0.3s;
+
+}
+
+
+.random-box button {
+
+    padding: 13px 23px;
+
+    border: none;
+
+    border-radius: 100px;
+
+    background: #b77c91;
+
+    color: white;
+
+    cursor: pointer;
+
+    font-family: inherit;
+
+    transition: 0.3s;
+
+}
+
+
+.random-box button:hover {
+
+    transform: scale(1.05);
+
+}
+
+
+/* =====================================================
+                    TIMELINE
+===================================================== */
+
+.timeline {
+
+    max-width: 800px;
+
+    margin: auto;
+
+}
+
+
+.timeline-item {
+
+    display: grid;
+
+    grid-template-columns: 70px 1fr;
+
+    gap: 30px;
+
+    padding-bottom: 70px;
+
+    position: relative;
+
+}
+
+
+.timeline-item:not(:last-child)::after {
+
+    content: "";
+
+    position: absolute;
+
+    left: 24px;
+
+    top: 45px;
+
+    bottom: 0;
+
+    width: 1px;
+
+    background: #d7c2c9;
+
+}
+
+
+.timeline-dot {
+
+    width: 50px;
+
+    height: 50px;
+
+    border-radius: 50%;
+
+    background: white;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: #a36e82;
+
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+
+    z-index: 2;
+
+}
+
+
+.timeline-item span {
+
+    font-size: 8px;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+
+    color: #a36e82;
+
+}
+
+
+.timeline-item h3 {
+
+    font-family: "DM Serif Display", serif;
+
+    font-size: 40px;
+
+    margin: 5px 0 10px;
+
+}
+
+
+.timeline-item p {
+
+    max-width: 500px;
+
+    color: #71686d;
+
+    line-height: 1.8;
+
+    font-size: 12px;
+
+}
+
+
+/* =====================================================
+                    OPEN WHEN
+===================================================== */
+
+.open-section {
+
+    padding: 120px 9%;
+
+    background: #f0e5e8;
+
+}
+
+
+.letters {
+
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 20px;
+
+}
+
+
+.letters button {
+
+    padding: 25px 35px;
+
+    background: white;
+
+    border: none;
+
+    border-radius: 12px;
+
+    font-family: inherit;
+
+    cursor: pointer;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.07);
+
+    transition: 0.3s;
+
+}
+
+
+.letters button:hover {
+
+    transform: rotate(-2deg) translateY(-5px);
+
+}
+
+
+/* =====================================================
+                    SECRET
+===================================================== */
+
+.secret-section {
+
+    padding: 100px 20px;
+
+    text-align: center;
+
+}
+
+
+.secret-button {
+
+    border: none;
+
+    background: none;
+
+    color: #a9989f;
+
+    font-family: inherit;
+
+    cursor: pointer;
+
+    line-height: 1.8;
+
+}
+
+
+.secret-button strong {
+
+    color: #272329;
+
+}
+
+
+#secretMessage {
+
+    margin-top: 25px;
+
+    font-family: "DM Serif Display", serif;
+
+    font-size: 28px;
+
+    color: #a36e82;
+
+}
+
+
+/* =====================================================
+                    FOOTER
+===================================================== */
+
+footer {
+
+    padding: 100px 20px;
+
+    text-align: center;
+
+    background: #272329;
+
+    color: white;
+
+}
+
+
+footer h2 {
+
+    font-family: "DM Serif Display", serif;
+
+    font-size: 55px;
+
+}
+
+
+footer p {
+
+    color: #bdb0b6;
+
+    margin: 10px 0 35px;
+
+}
+
+
+.footer-names {
+
+    color: #d29bae;
+
+    margin-bottom: 30px;
+
+    letter-spacing: 2px;
+
+}
+
+
+footer small {
+
+    color: #80747b;
+
+}
+
+
+/* =====================================================
+                    MODAL
+===================================================== */
+
+.modal {
+
+    position: fixed;
+
+    inset: 0;
+
+    background: rgba(30,25,29,0.78);
+
+    backdrop-filter: blur(10px);
+
+    display: none;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 25px;
+
+    z-index: 500;
+
+}
+
+
+.modal.show {
+
+    display: flex;
+
+}
+
+
+.modal-content {
+
+    position: relative;
+
+    max-width: 650px;
+
+    width: 100%;
+
+    background: #faf7f2;
+
+    padding: 40px;
+
+    text-align: center;
+
+    animation: pop 0.4s ease;
+
+}
+
+
+.modal-content img {
+
+    width: 220px;
+
+    height: 260px;
+
+    object-fit: cover;
+
+    border-radius: 120px 120px 15px 15px;
+
+    margin-bottom: 25px;
+
+}
+
+
+.close {
+
+    position: absolute;
+
+    top: 15px;
+
+    right: 20px;
+
+    border: none;
+
+    background: none;
+
+    font-size: 30px;
+
+    cursor: pointer;
+
+}
+
+
+#modalNick {
+
+    color: #a36e82;
+
+    letter-spacing: 2px;
+
+    font-size: 9px;
+
+}
+
+
+#modalName {
+
+    font-family: "DM Serif Display", serif;
+
+    font-size: 55px;
+
+    line-height: 0.9;
+
+    margin: 10px 0 15px;
+
+}
+
+
+.modal-love {
+
+    color: #a36e82;
+
+    margin-bottom: 20px;
+
+    font-size: 13px;
+
+}
+
+
+#modalDescription {
+
+    max-width: 450px;
+
+    margin: auto;
+
+    color: #70666c;
+
+    line-height: 1.7;
+
+    font-size: 12px;
+
+}
+
+
+.modal-facts {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 15px;
+
+    margin-top: 30px;
+
+}
+
+
+.modal-facts div {
+
+    padding: 15px 25px;
+
+    background: white;
+
+}
+
+
+.modal-facts span {
+
+    display: block;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
+
+    font-size: 7px;
+
+    color: #a36e82;
+
+}
+
+
+.modal-facts strong {
+
+    font-size: 10px;
+
+}
+
+
+/* =====================================================
+                    FLOATING HEARTS
+===================================================== */
+
+.hearts span {
+
+    position: fixed;
+
+    color: #c99aaa;
+
+    opacity: 0.3;
+
+    animation: float 12s linear infinite;
+
+    z-index: -1;
+
+}
+
+
+.hearts span:nth-child(1) {
+
+    left: 8%;
+
+    animation-delay: 0s;
+
+}
+
+
+.hearts span:nth-child(2) {
+
+    left: 25%;
+
+    animation-delay: 2s;
+
+}
+
+
+.hearts span:nth-child(3) {
+
+    left: 45%;
+
+    animation-delay: 5s;
+
+}
+
+
+.hearts span:nth-child(4) {
+
+    left: 65%;
+
+    animation-delay: 1s;
+
+}
+
+
+.hearts span:nth-child(5) {
+
+    left: 80%;
+
+    animation-delay: 7s;
+
+}
+
+
+.hearts span:nth-child(6) {
+
+    left: 95%;
+
+    animation-delay: 4s;
+
+}
+
+
+/* =====================================================
+                    ANIMATIONS
+===================================================== */
+
+@keyframes fadeUp {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateY(30px);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0);
+
+    }
+
+}
+
+
+@keyframes pop {
+
+    from {
+
+        opacity: 0;
+
+        transform: scale(0.9);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: scale(1);
+
+    }
+
+}
+
+
+@keyframes float {
+
+    from {
+
+        transform: translateY(110vh) rotate(0deg);
+
+    }
+
+    to {
+
+        transform: translateY(-10vh) rotate(360deg);
+
+    }
+
+}
+
+
+/* =====================================================
+                    MOBILE
+===================================================== */
+
+@media (max-width: 800px) {
+
+
+    nav {
+
+        padding: 0 5%;
+
+    }
+
+
+    .nav-links {
+
+        display: none;
+
+    }
+
+
+    .hero {
+
+        grid-template-columns: 1fr;
+
+        padding: 120px 7% 60px;
+
+    }
+
+
+    .hero h1 {
+
+        font-size: 85px;
+
+    }
+
+
+    .hero-photo img {
+
+        height: 450px;
+
+    }
+
+
+    .people-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .person-card {
+
+        grid-template-columns: 40% 60%;
+
+    }
+
+
+    .person-info {
+
+        padding: 25px 20px;
+
+    }
+
+
+    .person-info h3 {
+
+        font-size: 32px;
+
+    }
+
+
+    .memory-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .memory img,
+    .memory-large img {
+
+        height: 350px;
+
+    }
+
+
+    .section {
+
+        padding: 90px 7%;
+
+    }
+
+
+    .quote-section {
+
+        padding: 90px 8%;
+
+    }
+
+
+    .letters {
+
+        flex-direction: column;
+
+    }
+
+
+    .letters button {
+
+        width: 100%;
+
+    }
+
+
+    #modalName {
+
+        font-size: 42px;
+
+    }
+
+
+}
